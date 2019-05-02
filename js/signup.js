@@ -59,6 +59,9 @@ document.getElementById('signin-form').addEventListener('submit', (e) => {
       if (!result.data.token) throw ('no token found');
       window.localStorage.setItem('user_token', result.data.token);
       window.localStorage.setItem('type', result.data.type);
+      window.localStorage.setItem('firstname', result.data.firstname);
+      window.localStorage.setItem('lastname', result.data.lastname);
+      window.localStorage.setItem('email', result.data.email);
       window.location.href = './dashboard.html';
     }
   })
