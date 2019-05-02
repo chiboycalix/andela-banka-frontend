@@ -2,6 +2,11 @@
   margin: 0;
   padding: 0;
 }
+.error{
+  font-weight: 600;
+  color: rgb(161, 13, 13);
+  text-align: center;
+}
 body{
   width: 90vw;
   height: 97.1vh;

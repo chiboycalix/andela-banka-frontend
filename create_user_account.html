@@ -46,14 +46,16 @@
                 <h3>Create Bank Account</h3> 
         </div>
         <div id="create_account">
-            <form>
-               <input type="text" placeholder="Igwe Chinonso" disabled>
-               <input type="text" placeholder="Enter email">
-               <input type="text" placeholder="Opening balance">
+            <form id="create_account_form">
+                <p id="error_message" class="error"></p>
+                <p id="account_message" class="success"></p>
+               <input type="text" id="fullname" placeholder="Igwe Chinonso" disabled>
+               <input type="text" id="email" placeholder="Enter email" disabled>
+               <input type="text" id="balance" placeholder="Opening balance">
                <select name="" id="accountType">
-                   <option value="">Select account type</option>
-                   <option value="">Current</option>
-                   <option value="">Savings</option>
+                   <option value="1">Select account type</option>
+                   <option value="current">Current</option>
+                   <option value="savings">Savings</option>
                </select>
                <input type="submit" value="Create Account"> 
             </form>
