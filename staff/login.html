@@ -25,11 +25,10 @@
             <h3>Staff Login /</h3><span>Enter Login Details</span> 
         </div>
         <div id="user_login">
-            <form action="index.html">
-               <label for="email">Email</label>
-               <input type="text" placeholder="Enter email">
-               <label for="password">Password</label>
-               <input type="password" placeholder="Enter password">
+            <form id="staff_login">
+               <p id="error_staff_login" class="error"></p>
+               <input type="text" id="email-login" placeholder="Enter email">
+               <input type="password" id="password-login" placeholder="Enter password">
                <input type="submit" value="Login"> 
             </form>
         </div>
@@ -43,6 +42,7 @@
         </div>
        </footer>
    </section>
-<script src="js/dashboard.js"></script>
+<script src="../js/dashboard.js"></script>
+<script src="../js/staffLogin.js"></script>
 </body>
 </html>

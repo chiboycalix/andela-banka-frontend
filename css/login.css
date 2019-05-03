@@ -8,6 +8,11 @@ body{
     background: #f2f2f2;
     font-family: 'Montserrat', sans-serif;
 }
+.error{
+    font-weight: 600;
+    color: rgb(161, 13, 13);
+    text-align: center;
+  }
 #navbar{
     position: fixed;
     z-index: 1;

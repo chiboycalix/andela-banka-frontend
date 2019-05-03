@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/dashboard.css">
     <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../css/edit_account.css">
     <title>Staff | Dashboard</title>
 </head>
 <body>
@@ -43,22 +44,22 @@
         <div id="second_navbar">
             <h3>Staff Dashboard </h3>
         </div>
-        <h2>Activate / Deactivate User Account</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>S/N</th>
-                    <th>Account name</th>
-                    <th>Account number</th>
-                    <th>Account type</th>
-                    <th>Status</th>
-                    <th>Action</th>
-                </tr>
-            </thead>
-            <tbody id="table_body">
-                
-            </tbody>
-        </table>
+        <h2>Edit Account</h2>
+        <div id="edit_account">
+            <form id="edit_account_form">
+                <p id="account_message" class="success"></p>
+               <input type="text" id="fullname" placeholder="Igwe Chinonso" disabled>
+               <input type="text" id="accountnumber" placeholder="accountnumber" disabled>
+               <input type="text" id="email" placeholder="Enter email" disabled>
+               <input type="text" id="balance" placeholder="Opening balance" disabled>
+               <select name="" id="accountStatus">
+                    <option value="1">Change Account Status</option>
+                    <option value="dormant">Dormant</option>
+                    <option value="active">Active</option>
+               </select>
+            <input type="submit" value="Edit Account"> 
+            </form>
+        </div>
     </div>
 </section>
 <section>
@@ -69,7 +70,7 @@
         </footer>
     </section>
     <script src="../js/dashboard.js"></script>
-    <script src="../js/getAllAccounts.js"></script>
+    <script src="../js/staffPatch.js"></script>
     <script src="../js/staffLogout.js"></script>
 </body>
 </html>

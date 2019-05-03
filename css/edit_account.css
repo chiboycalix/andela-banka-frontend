@@ -1,0 +1,13 @@
+#edit_account{
+  width: 50%;
+  margin-left: 25%;
+  margin-bottom: 150px;
+  margin-top: 50px;
+  background: #fff;
+  padding: 20px;
+}
+.success{
+  font-weight: 600;
+  color: green;
+  text-align: center;
+}
