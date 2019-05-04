@@ -1,6 +1,7 @@
 #user_bank_details{
-    margin-bottom: 200px;
+    margin: 100px;
     text-align: center;
+    background: #fff;
 }
 #user_bank_details #account_image{
     width: 250px;
@@ -23,6 +24,6 @@
     color: #fff;
     text-decoration: none;
     position: absolute;
-    transform: translateY(-180px);
+    transform: translateY(-80px);
     margin-left: 55%;
 }

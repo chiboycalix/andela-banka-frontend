@@ -1,6 +1,5 @@
 const basePath = 'https://banka-challenge-3.herokuapp.com';
 
-
 const token = window.localStorage.getItem('user_token')
 fetch(`${basePath}/api/v1/accounts`, {
   method: 'GET',
@@ -10,7 +9,6 @@ fetch(`${basePath}/api/v1/accounts`, {
   }
 }).then(async (response) => {
   const result = await response.json()
-  console.log(result)
   for (let i = 0; i < result.data.length; i++) {
     document.getElementById('table_body').innerHTML += `<tr>
         <td class="activeId">${result.data[i].id}</td>
