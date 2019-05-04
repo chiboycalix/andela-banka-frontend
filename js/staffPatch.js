@@ -34,7 +34,6 @@ document.getElementById('edit_account_form').addEventListener('submit', (e) => {
   }).then(async (response) => {
     const editedAcc = await response.json()
     document.getElementById('account_message').innerHTML = editedAcc.message
-    window.location.href = '../staff/index.html';
   })
 });
 

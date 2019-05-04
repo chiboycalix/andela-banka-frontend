@@ -22,6 +22,10 @@ document.getElementById('staff_login').addEventListener('submit', (e) => {
         const result2 = await response.json();
             document.getElementById('error_staff_login').innerHTML =`${result2.error}`;
           }
+      if (response.status === 403) {
+        window.localStorage.clear();
+        window.location.href = '../staff/login.html';
+      }
       if(response.status === 200) {
         const result = await response.json()
         if (!result.data.token) throw ('no token found');
